@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 1300px) {
+  .register {
+    background-image: url(../../Images/Register/register.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .control {
+    margin: 0px 300px 300px 300px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.564);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    position: relative;
+    top: 300px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .register {
+    background-image: url(../../Images/Register/register.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .control {
+    background-color: rgba(0, 0, 0, 0.564);
+    margin: 0px 20px 0 20px;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    position: relative;
+    top: 90px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 999px) {
+  .register {
+    background-image: url(../../Images/Register/register.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .control {
+    background-color: rgba(0, 0, 0, 0.564);
+    margin: 0px 20px 0 20px;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    position: relative;
+    top: 350px;
+  }
+}
+@media only screen and (max-width: 1290px) and (min-width: 1000px) {
+  .register {
+    background-image: url(../../Images/Register/register.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .control {
+    background-color: rgba(0, 0, 0, 0.564);
+    margin: 0px 200px 0px 200px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    position: relative;
+    top: 150px;
+  }
+}/*# sourceMappingURL=Register.css.map */

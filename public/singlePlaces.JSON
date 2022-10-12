@@ -1,0 +1,46 @@
+[
+    {
+      "id": 1,
+      "place": "Florida",
+      "country": "United States Of America",
+      "update": "5",
+      "img":"./api-img/Fourth-part/florida.jpg"
+    },
+    {
+      "id": 2,
+      "place": "Miami",
+      "country": "United States Of America",
+      "update": "4",
+      "img":"./api-img/Fourth-part/miami.jpg"
+    },
+    {
+      "id": 3,
+      "place": "San Fransisco",
+      "country": "United States Of America",
+      "update": "5",
+      "img":"./api-img/Fourth-part/san fransisco.jpg"
+    },
+    {
+      "id": 4,
+      "place": "Riyadh",
+      "country": "Kingdom Of Saudi Arabia",
+      "update": "3",
+      "img":"./api-img/Fourth-part/saudi arabia.jpg"
+    },
+    {
+      "id": 5,
+      "place": "Changi Airport",
+      "country": "Singapore",
+      "update": "4",
+      "img":"./api-img/Fourth-part/singapore.jpg"
+    },
+    {
+      "id": 6,
+      "place": "Hagia Sofia",
+      "country": "Turkey",
+      "update": "1",
+      "img":"./api-img/Fourth-part/turkey.jpg"
+    }
+    
+    
+  ]

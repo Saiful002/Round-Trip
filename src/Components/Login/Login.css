@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 1300px) {
+  .login {
+    background-image: url(../../Images/Login/pc-login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .html {
+    margin: 0px 1100px 300px 200px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.247);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    position: relative;
+    top: 300px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .login {
+    background-image: url(../../Images/Login/responsive-login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .html {
+    background-color: rgba(0, 0, 0, 0.247);
+    margin: 0px 20px 0 20px;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    position: relative;
+    top: 200px;
+  }
+}
+@media only screen and (max-width: 1290px) and (min-width: 1000px) {
+  .login {
+    background-image: url(../../Images/Login/pc-login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .html {
+    background-color: rgba(0, 0, 0, 0.247);
+    margin: 0px 400px 100px 100px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    position: relative;
+    top: 200px;
+  }
+}/*# sourceMappingURL=Login.css.map */
