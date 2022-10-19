@@ -1,8 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import '../Login/Login.css'
-import ReactDOM from "react-dom";
 import { useForm } from "react-hook-form";
+import useAuth from './hooks/useAuth';
+
+
 
 type Inputs = {
   email: string,
@@ -19,6 +21,8 @@ const Login = () => {
   const onSubmit = (data: any) => {
     console.log(data);
   }; 
+
+  const {signInWithGoogle}=useAuth();
   return (
            
       <div className="login">
@@ -43,6 +47,7 @@ const Login = () => {
   
   <button type="submit" className="btn btn-success">LogIn</button>
   <h4 className='mt-5'>Don't have an account ? Please <NavLink to='/register' className='text-decoration-none text-primary'>Register</NavLink></h4>
+  <button onClick={signInWithGoogle} type="submit" className="btn btn-warning">SignIn With Google  <i className="fa-brands fa-google"></i></button>
 </form>
 
     

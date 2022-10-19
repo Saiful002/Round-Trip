@@ -2,38 +2,32 @@
     {
       "id": 1,
       "name": "America",
-      "offer": "5 days,4 nights",
-      "price": "5000$",
+      
       "img":"./api-img/Second-part/america.jpg"
     },
     {"id": 2,
       "name": "Dubai",
-      "offer": "7 days,6 nights",
-      "price": "7000$",
+      
       "img":"./api-img/Second-part/dubai.jpg"
     },
     {"id": 3,
       "name": "Brasil",
-      "offer": "6 days,5 nights",
-      "price": "6000$",
+      
       "img":"./api-img/Second-part/brasil.jpg"
     },
     {"id": 4,
       "name": "Italy",
-      "offer": "3 days, 2 nights",
-      "price": "4000$",
+      
       "img":"./api-img/Second-part/italy.jpg"
     },
     {"id": 5,
       "name": "Maldives",
-      "offer": "8 days, 7 nights",
-      "price": "6000$",
+      
       "img":"./api-img/Second-part/maldives.jpg"
     },
     {"id": 6,
       "name": "Nepal",
-      "offer": "4 days, 3 nights",
-      "price": "2000$",
+      
       "img":"./api-img/Second-part/nepal.jpg"
     }
   ]

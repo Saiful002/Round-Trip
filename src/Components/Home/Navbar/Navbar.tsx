@@ -3,14 +3,23 @@ import {
      NavLink
    } from "react-router-dom";
 import logo from '../../../Images/Icon/logo.png'
+import useAuth from '../../Login/hooks/useAuth';
 
 const Navbar = () => {
+     const {user, signingOut}=useAuth();
   return (
+    
     /* ===================
          1st navbar part 
         ==================== */
+        
         <section className="container-fluid p-0">
         <nav className="navbar navbar-expand-lg navbar-light navigation justify-content-center">
+        {user.email? <div>
+                            <img className='border rounded-circle border-dark ms-3' style={{"width":"20%"}} src={user.photoURL} alt="" />
+                <span>{user.displayName}</span>
+               
+            </div>: <div></div>}
             <div className="container m-0">
                 <a className="navbar-brand" href="#">
                     <img src={logo} alt="" width="138" height="100" className="d-inline-block align-text-top"/>
@@ -79,10 +88,12 @@ const Navbar = () => {
                Button trigger modal
                ==========================
                 */}
-                            <button type="button" className="btn btn-danger" data-bs-toggle="modal"
+                            <button type="button" className="btn btn-danger mt-3" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">
                                 Search
                             </button>
+            
+
 
                    {/* ==================
                           Modal
@@ -104,12 +115,39 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </li>
+                        <div >
+                            {/* ====================
+                        Login Condition modal
+                        ==========================
+                            */}
+                        
+ <div className='text-end'>
+        
+    {user.email ?
+                            <button type="button" className="nav-item btn btn-danger mt-2 mx-2">
+                             <NavLink className="nav-link active text-white p-1" to="/home"  onClick={signingOut}>LogOut <i className="fa-solid fa-right-to-bracket"></i></NavLink>
+                            
+                        </button> : 
+                
+                            <button type="button" className="nav-item btn btn-success mt-2 mx-2">
+                             <NavLink className="nav-link active text-white p-1" to="/login">LogIn <i className="fa-solid fa-right-to-bracket"></i></NavLink>
+                        </button>}
+    </div> 
+                        
+                       
+                    </div>
+                        
                     </ul>
+                    
+                        
 
                 </div>
             </div>
+            
         </nav>
+        
     </section>
+    
   )
 }
 

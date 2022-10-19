@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import miami from '../../../Images/Fourth-part/miami.jpg'
-import florida from '../../../Images/Fourth-part/florida.jpg'
-import sanFransisco from '../../../Images/Fourth-part/san fransisco.jpg'
-import saudiArabia from '../../../Images/Fourth-part/saudi arabia.jpg'
-import singapore from '../../../Images/Fourth-part/singapore.jpg'
-import turkey from '../../../Images/Fourth-part/turkey.jpg'
+import Booking from '../Booking/Booking';
+
 import SinglePlace from './SinglePlace/SinglePlace'
 
 
@@ -40,10 +36,16 @@ const Places = () => {
         <div className="row gy-4">
             
         {
-                SinglePlaces.map(SPlace=><SinglePlace
+                SinglePlaces.map(SPlace=>
+                <SinglePlace
                    SPlace={SPlace}
                 ></SinglePlace>)
+
+                
             }
+            
+           
+                    
 
         </div>
         <div>
