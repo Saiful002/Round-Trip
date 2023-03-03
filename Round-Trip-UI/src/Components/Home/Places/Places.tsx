@@ -9,7 +9,7 @@ const Places = () => {
 
     useEffect(() => {
      
-  fetch('./singlePlaces.JSON')
+  fetch('http://localhost:5000/bookings')
   .then(res=>res.json())
   .then(data=>setSinglePlaces(data))
     
@@ -38,6 +38,7 @@ const Places = () => {
         {
                 SinglePlaces.map(SPlace=>
                 <SinglePlace
+                
                    SPlace={SPlace}
                 ></SinglePlace>)
 

@@ -1,15 +1,15 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import '../Login/Login.css'
 import { useForm } from "react-hook-form";
 import useAuth from './hooks/useAuth';
 
 
-
-type Inputs = {
-  email: string,
-  password: any,
-};
+interface LocationState {
+  from: {
+    pathname: any;
+  };
+}
 
 
 const Login = () => {
@@ -18,11 +18,25 @@ const Login = () => {
     handleSubmit,
     formState: { errors }
   } = useForm();
-  const onSubmit = (data: any) => {
+  const onSubmit = (data:any) => {
     console.log(data);
   }; 
 
   const {signInWithGoogle}=useAuth();
+  const location=useLocation();
+  const navigate = useNavigate();
+
+
+const redirectInitialPage=()=>{
+  signInWithGoogle()
+  .then (()=>{
+    navigate((location.state as LocationState).from||'/booking/:id')
+    
+        })
+}
+
+
+
   return (
            
       <div className="login">
@@ -47,7 +61,7 @@ const Login = () => {
   
   <button type="submit" className="btn btn-success">LogIn</button>
   <h4 className='mt-5'>Don't have an account ? Please <NavLink to='/register' className='text-decoration-none text-primary'>Register</NavLink></h4>
-  <button onClick={signInWithGoogle} type="submit" className="btn btn-warning">SignIn With Google  <i className="fa-brands fa-google"></i></button>
+  <button onClick={redirectInitialPage} type="submit" className="btn btn-warning">SignIn With Google  <i className="fa-brands fa-google"></i></button>
 </form>
 
     

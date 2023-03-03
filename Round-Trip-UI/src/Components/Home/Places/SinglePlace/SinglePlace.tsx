@@ -1,9 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Booking from '../../Booking/Booking';
+
 
 const SinglePlace = (props:any) => {
-    const{place,country,offer,img,price,id}=props.SPlace
+    const{place,country,offer,img,price,_id}=props.SPlace
 
   return (
     <div className="col-lg-4 shadow">
@@ -29,13 +29,9 @@ const SinglePlace = (props:any) => {
                             </small>
                         </div>
                         <div className="text-end">
-                        <NavLink className="nav-link active" to={`/booking/${id}`} aria-current="page">
+                        <NavLink className="nav-link active" to={`/booking/${_id}`} aria-current="page">
                             <button type="button" className="btn btn-success mt-3">Book Now</button>
-                            
-                            
-            
-                        
-                        
+             
                             </NavLink>
                         
 
